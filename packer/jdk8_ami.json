@@ -1,0 +1,33 @@
+{
+    "_comment": "JDK8 base AMI using Amazon Linux (amzn-ami-hvm-2018.03.0.20180811-x86_64-ebs)",
+    "variables": {
+      "ami_name"}-base-ami
+    },
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "source_ami": "ami-0252a84eb1d66c2a0",
+        "vpc_id": "vpc-0e69ff1850699283f",
+        "subnet_id": "subnet-0f4a48bf9967688d4",
+        "security_group_id": "sg-0e2ebb4191a099888",
+        "instance_type": "t2.small",
+        "ssh_interface": "private_ip",
+        "ssh_username": "ec2-user",
+        "ami_name"}",
+        "ami_description": "AMI TEST YONGWOO",
+        "tags": {
+          "Name"}",
+          "BaseAMI_Id"}",
+          "BaseAMI_Name"}",
+          "TEAM": "platform",
+        },
+        "ami_users": ["881498969575"]
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "ansible",
+        "playbook_file": "playbook/jdk8.yml"
+      }
+    ]
+  }
