@@ -1,7 +1,7 @@
 {
-    "_comment": "JDK8 base AMI using Amazon Linux (amzn-ami-hvm-2018.03.0.20180811-x86_64-ebs)",
+    "_comment": "JDK8 base AMI",
     "variables": {
-      "ami_name"}-base-ami
+      "ami_name": "}-base-ami"
     },
     "builders": [
       {
@@ -13,13 +13,12 @@
         "instance_type": "t2.small",
         "ssh_interface": "private_ip",
         "ssh_username": "ec2-user",
-        "ami_name"}",
+        "ami_name": "}",
         "ami_description": "AMI TEST YONGWOO",
         "tags": {
-          "Name"}",
-          "BaseAMI_Id"}",
-          "BaseAMI_Name"}",
-          "TEAM": "platform",
+          "Name": "yongwoo-ami-{{isotime    |   clean_ami-name}}",
+          "OS": "Ubuntu",
+          "TEAM": "platform"
         },
         "ami_users": ["881498969575"]
       }
