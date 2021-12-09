@@ -1,3 +1,4 @@
 # ami-test
 
-taestests
+test
+아 드디어 되는것?
