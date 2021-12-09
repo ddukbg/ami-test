@@ -16,7 +16,7 @@
         "ami_name": "}",
         "ami_description": "AMI TEST YONGWOO",
         "tags": {
-          "Name": "yongwoo-ami-{{isotime    |   clean_ami-name}}",
+          "Name": "yongwoo-ami-{{isotime    |   clean-ami-name}}",
           "OS": "Ubuntu",
           "TEAM": "platform"
         },
