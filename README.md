@@ -1,4 +1,6 @@
 # ami-test
 
-test
-아 드디어 되는것?
+AWS EC2 AMI 배포
+EC2(Jenkins, Packer, Ansible)
+Jenkins Job(AMI 배포)
+Packer -> AMI
